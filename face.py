@@ -10,7 +10,6 @@ def draw_face_landmarks(image, face):
 	for face_landmarks in face_landmarks_list:
 	    pil_image = Image.fromarray(image)
 	    d = ImageDraw.Draw(pil_image, 'RGBA')
-	    # blalalalal
 	    # Make the eyebrows into a nightmare
 	    d.polygon(face_landmarks['left_eyebrow'], fill=(68, 54, 39, 128))
 	    d.polygon(face_landmarks['right_eyebrow'], fill=(68, 54, 39, 128))
