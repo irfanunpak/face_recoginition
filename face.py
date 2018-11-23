@@ -12,10 +12,10 @@ def draw_face_landmarks(image, face):
 	    d = ImageDraw.Draw(pil_image, 'RGBA')
 
 	    # Make the eyebrows into a nightmare
-	    # d.polygon(face_landmarks['left_eyebrow'], fill=(68, 54, 39, 128))
-	    # d.polygon(face_landmarks['right_eyebrow'], fill=(68, 54, 39, 128))
-	    # d.line(face_landmarks['left_eyebrow'], fill=(68, 54, 39, 150), width=5)
-	    # d.line(face_landmarks['right_eyebrow'], fill=(68, 54, 39, 150), width=5)
+	    d.polygon(face_landmarks['left_eyebrow'], fill=(68, 54, 39, 128))
+	    d.polygon(face_landmarks['right_eyebrow'], fill=(68, 54, 39, 128))
+	    d.line(face_landmarks['left_eyebrow'], fill=(68, 54, 39, 150), width=5)
+	    d.line(face_landmarks['right_eyebrow'], fill=(68, 54, 39, 150), width=5)
 
 	    # # Gloss the lips
 	    # d.polygon(face_landmarks['top_lip'], fill=(150, 0, 0, 128))
